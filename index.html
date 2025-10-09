@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegance Boutique - Moda Feminina Sofisticada</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">Elegance Boutique</h1>
+            <nav>
+                <a href="#lista-produtos">Novidades</a>
+                <a href="#">Vestidos</a>
+                <a href="#">Acessórios</a>
+            </nav>
+            <button id="ver-carrinho" class="carrinho-btn">
+                🛍️ Sacola (<span id="contador-carrinho">0</span>)
+            </button>
+        </div>
+    </header>
+
+    <div class="hero-banner">
+        <div class="container">
+            <h2>Coleção Primavera/Verão 2025.</h2>
+            <p>Peças exclusivas que combinam estilo e conforto para a mulher moderna.</p>
+            <a href="#lista-produtos" class="btn-cta">Descubra</a>
+        </div>
+    </div>
+
+    <main class="container">
+        <h2>Itens Selecionados</h2>
+        <section id="lista-produtos">
+            
+            <div class="produto-card" data-id="1" data-nome="Vestido Floral Midi" data-preco="189.90">
+                <img src="imagens/vestido-floral.jpg" alt="Vestido Floral">
+                <div class="produto-info">
+                    <h3>Vestido Floral Midi</h3>
+                    <p class="descricao">Leve e fluído. Perfeito para eventos diurnos ou passeios.</p>
+                    <span class="preco">R$ 179,90</span>
+                    <button class="adicionar-carrinho">Adicionar à Sacola</button>
+                </div>
+            </div>
+
+            <div class="produto-card" data-id="2" data-nome="Calça Alfaiataria Creme" data-preco="245.00">
+                <img src="imagens/calca-alfaiataria.jpg" alt="Calça Alfaiataria">
+                <div class="produto-info">
+                    <h3>Calça Alfaiataria</h3>
+                    <p class="descricao">Corte impecável. Essencial para um look elegante no trabalho.</p>
+                    <span class="preco">R$ 249,00</span>
+                    <button class="adicionar-carrinho">Adicionar à Sacola</button>
+                </div>
+            </div>
+
+            <div class="produto-card" data-id="3" data-nome="Blusa de Seda Off-White" data-preco="129.50">
+                <img src="imagens/blusa-seda.jpg" alt="Blusa de Seda">
+                <div class="produto-info">
+                    <h3>Blusa de Seda</h3>
+                    <p class="descricao">Toque macio e caimento perfeito. Ideal para combinar.</p>
+                    <span class="preco">R$ 139,50</span>
+                    <button class="adicionar-carrinho">Adicionar à Sacola</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    
+    <div id="modal-carrinho" class="modal">
+        <div class="modal-conteudo">
+            <span class="fechar-modal">&times;</span>
+            <h2>Sua Sacola</h2>
+            <ul id="itens-carrinho">
+                </ul>
+            <div class="carrinho-rodape">
+                <p>Total: <strong id="carrinho-total">R$ 0,00</strong></p>
+                <button id="finalizar-compra">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Elegance Boutique. Feito com paixão pela moda.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
